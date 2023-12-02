@@ -57,13 +57,13 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: #FFC312;
+background-color: rgb(141, 214, 44);
 width: 100px;
 }
 
 .login_btn:hover{
 color: black;
-background-color: white;
+background-color: rgb(120, 120, 211);
 }
 
 .links{
