@@ -28,13 +28,13 @@
                         <a class="nav-link" href="../index.php">Trang ngoài</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="category.php">Thể loại</a>
+                        <a class="nav-link" href="the_loai/category.php">Thể loại</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="author.php">Tác giả</a>
+                        <a class="nav-link" href="tac_gia/author.php">Tác giả</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="article.php">Bài viết</a>
+                        <a class="nav-link" href="bai_viet/article.php">Bài viết</a>
                     </li>
                 </ul>
                 </div>
@@ -42,6 +42,12 @@
         </nav>
 
     </header>
+
+    <?php 
+    require_once("./func_php/select_delete.php");
+    require_once("./connect.php");
+    
+    ?>
     <main class="container mt-5 mb-5">
         <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
         <div class="row">
@@ -53,7 +59,7 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            110
+                            <?php echo count(get_table("user", $conn)) ?>
                         </h5>
                     </div>
                 </div>
@@ -67,7 +73,8 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            10
+                        <?php echo count(get_table("theloai", $conn)) ?>
+
                         </h5>
                     </div>
                 </div>
@@ -81,7 +88,8 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            20
+                        <?php echo count(get_table("tacgia", $conn)) ?>
+
                         </h5>
                     </div>
                 </div>
@@ -95,7 +103,8 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            110
+                        <?php echo count(get_table("baiviet", $conn)) ?>
+
                         </h5>
                     </div>
                 </div>
