@@ -28,7 +28,7 @@
                         <a class="nav-link" href="../index.php">Trang ngoài</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="../the_loai/category.php">Thể loại</a>
+                        <a class="nav-link" href="../the_loai/category.php">Thể loại</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../tac_gia/author.php">Tác giả</a>
